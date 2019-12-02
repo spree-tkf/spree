@@ -1,0 +1,12 @@
+<row class="line_items">
+  <columns>
+    <p>
+      <% if frontend_available? %>
+        <%= line_item.quantity %> x <%= link_to raw(line_item.variant.product.name), spree.product_url(line_item.variant.product) %>
+      <% else %>
+        <%= line_item.quantity %> x <%= raw(line_item.variant.product.name) %>
+      <% end %>
+      <%= raw(line_item.variant.options_text) -%>
+    </p>
+  </columns>
+</row>

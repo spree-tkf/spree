@@ -1,16 +1,15 @@
-<tr>
-  <td class="six sub-columns">
-    <strong>
+<row class="line_items">
+  <columns small="6" large="6">
+    <p>
       <% if frontend_available? %>
         <%= link_to raw(line_item.variant.product.name), spree.product_url(line_item.variant.product) %>
       <% else %>
         <%= raw(line_item.variant.product.name) %>
       <% end %>
-    </strong>
     <%= raw(line_item.variant.options_text) -%>
-    (<%= line_item.variant.sku %>)
-  </td>
-  <td class="six sub-columns last right">
-    <%= line_item.quantity %> x <%= line_item.single_money %> = <%= line_item.display_amount %>
-  </td>
-</tr>
+    </p>
+  </columns>
+  <columns small="6" large="6">
+  <p class="text-right"><%= line_item.quantity %> x <%= line_item.single_money %> = <%= line_item.display_amount %></p>
+  </columns>
+</row>

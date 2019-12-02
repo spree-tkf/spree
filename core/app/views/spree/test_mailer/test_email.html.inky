@@ -1,22 +1,13 @@
-<table>
-  <tr>
-    <td>
-
-      <center>
+<row>
+  <columns>
         <h1 class="center">
           <%= Spree.t('test_mailer.test_email.greeting') %>
         </h1>
-      </center>
+  </columns>
+</row>
 
-    </td>
-    <td class="expander"></td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <td>
-
+<row>
+  <columns>
       <p class="lede">
         <%= Spree.t('test_mailer.test_email.message') %>
       </p>
@@ -33,8 +24,5 @@
         tags and place them inline. Gmail only supports inline styles. We use
         <a href="https://github.com/fphilipe/premailer-rails" target="_blank">Premailer for Rails</a> by default.
       </p>
-
-    </td>
-    <td class="expander"></td>
-  </tr>
-</table>
+    </columns>
+</row>

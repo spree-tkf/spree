@@ -1,0 +1,8 @@
+<row class="line_items">
+  <columns small="6" large="6">
+    <h6><%= Spree.t('order_mailer.total') %></h6>
+  </columns>
+  <columns small="6" large="6">
+    <h6 class="text-right"><%= order.display_total %></h6>
+  </columns>
+</row>
