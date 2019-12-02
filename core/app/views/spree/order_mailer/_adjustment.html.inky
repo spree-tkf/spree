@@ -1,8 +1,0 @@
-<row class="line_items">
-  <columns small="6" large="6">
-    <p><%= raw(adjustment.label) %>:</p>
-  </columns>
-  <columns small="6" large="6">
-    <p class="text-right"><%= adjustment.display_amount %></p>
-  </columns>
-</row>
