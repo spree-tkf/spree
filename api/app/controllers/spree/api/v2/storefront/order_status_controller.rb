@@ -20,14 +20,6 @@ module Spree
             resource
           end
 
-          def serialize_resource(resource)
-            resource_serializer.new(
-              resource,
-              include: resource_includes,
-              sparse_fields: sparse_fields
-            ).serializable_hash
-          end
-
           def resource_finder
             Spree::Api::Dependencies.storefront_completed_order_finder.constantize
           end
@@ -37,7 +29,7 @@ module Spree
           end
 
           def ensure_order_token
-            raise ActiveRecord::RecordNotFound unless order_token
+            raise ActiveRecord::RecordNotFound unless order_token.present?
           end
         end
       end
