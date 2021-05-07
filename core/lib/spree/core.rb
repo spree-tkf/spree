@@ -7,7 +7,7 @@ require 'friendly_id'
 require 'kaminari'
 require 'mail'
 require 'monetize'
-require 'paperclip'
+# require 'paperclip' meme_magic
 require 'paranoia'
 require 'mini_magick'
 require 'premailer/rails'
